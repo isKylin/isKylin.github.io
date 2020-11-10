@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Selenium for Java（一）, null">
+    <meta name="keywords" content="selenium for python（一）, null">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Selenium for Java（一） | null</title>
+    <title>selenium for python（一） | null</title>
     <link rel="icon" type="image/png" href="./favicon.png">
 
     <link rel="stylesheet" type="text/css" href="./libs/awesome/css/all.css">
@@ -313,7 +313,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Selenium for Java（一）</h1>
+                    <h1 class="description center-align post-title">selenium for python（一）</h1>
                 </div>
             </div>
         </div>
@@ -430,12 +430,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="./tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">
-                                <span class="chip bg-color">软件测试</span>
+                            <a href="./tags/webui-%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/">
+                                <span class="chip bg-color">webui 自动化测试</span>
                             </a>
                         
-                            <a href="./tags/Web-%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/">
-                                <span class="chip bg-color">Web 自动化测试</span>
+                            <a href="./tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">
+                                <span class="chip bg-color">软件测试</span>
                             </a>
                         
                     </div>
@@ -446,8 +446,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="./categories/Selenium-for-Java/" class="post-category">
-                                Selenium for Java
+                            <a href="./categories/selenium-for-python-%E7%B3%BB%E5%88%97/" class="post-category">
+                                selenium for python 系列
                             </a>
                         
                     </div>
@@ -459,28 +459,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-10-20
+                    2020-10-22
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-10-20
+                    2020-11-10
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.3k
+                    995
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    3 分
                 </div>
                 
 
@@ -495,95 +495,64 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一、Selenium-概述"><a href="#一、Selenium-概述" class="headerlink" title="一、Selenium 概述"></a>一、Selenium 概述</h2><h3 id="1-1-Selenium-发展史"><a href="#1-1-Selenium-发展史" class="headerlink" title="1.1 Selenium 发展史"></a>1.1 Selenium 发展史</h3><p>Selenium 是一系列基于 Web 的自动化工具，提供一套测试函数，用于支持 Web 自动化测试。函数非常灵活，能够完成界面元素定位、窗口跳转、结果比较，具有如下特点：</p>
-<ul>
-<li>多浏览器支持：如 IE、Firefox、Chrome、Safari、Android 手机浏览器等。</li>
-<li>多语言支持：如 Java、Python、PHP、C# 等。</li>
-<li>多操作系统支持：如 Windows、Linux、IOS、Android等。</li>
-<li>开源免费：<a target="_blank" rel="noopener" href="http://www.seleniumhg.org/">Selenium 官网地址</a></li>
-</ul>
-<p>Selenium 框架由多个工具组成，包括：Selenium IDE，Selenium RC，Selenium WebDriver 和 SeleniumRC。</p>
-<p>发展到如今 Selenium 已经发布到了 3.0+ 版本了，以下是简单总结发展过程以及一些变化：</p>
-<ul>
-<li>Selenium 1.0</li>
-</ul>
-<p>Jason Huggins 在2004年发起的 Selenium 项目，使用 JavaScript 编写的一个类库，这个 JavaScript 类库就是 Selenium core，同时也是 seleniumRC、Selenium IDE 的核心组件，Selenium由此诞生。</p>
-<p><img src="https://gitee.com/isKylin/picbed/raw/master/webAutoTest/image-20200930091535768.png" alt="image-20200930091535768"></p>
-<ul>
-<li>Selenium 2.0</li>
-</ul>
-<p>因为 Selenium 和 Webdriver 的合并，所以，Selenium 2.0 由此诞生，简单用公式表示为：Selenium 2.0 = Selenium 1.0 + WebDriver，需要强调的是，在Selenium 2.0 中主推的是 WebDriver，可以将其看作 Selenium RC 的替代品，因为 Selenium 为了保持向下的兼容性，所以在 Selenium 2.0 中并没有彻底地抛弃Selenium RC，所以，我们在学习 Selenium2.0 的时候，核心是学习 WebDriver，它的工作原理是这样的：</p>
-<p><img src="https://gitee.com/isKylin/picbed/raw/master/webAutoTest/image-20200930091703173.png" alt="image-20200930091703173"></p>
-<ul>
-<li>Selenium 3.0</li>
-</ul>
-<p>Selenium 3.0 做了一些不大不小的更新：</p>
-<p>1）终于去掉了 RC，简单用公式表示为：Selenium 3.0 = Selenium 2.0 - Selenium RC（Remote Control）。</p>
-<p>2）Selenium3.0 只支持 Java8 版本以上。</p>
-<p>3）Selenium3.0 中 Firefox 浏览器驱动独立了，以前装完 Selenium2 就可以驱动 Firefox 浏览器了，现在和 Chrome 一样，必须下载和设置浏览器驱动。</p>
-<p>4）MAC OS 集成 Safari 的浏览器驱动，默认在 /usr/bin/safaridriver 目录下。</p>
-<p>5）只支持 IE 9.0 版本以上。</p>
-<h3 id="1-2-Selenium-原理"><a href="#1-2-Selenium-原理" class="headerlink" title="1.2 Selenium 原理"></a>1.2 Selenium 原理</h3><p>将 WebDriver 驱动浏览器类比成开出租车的场景：</p>
-<p>在开出租车时有三个角色：</p>
-<ul>
-<li><strong>乘客：</strong>他/她告诉出租车司机去哪里，大概怎么走。</li>
-<li><strong>出租车司机：</strong>他按照乘客的要求来操控出租车。</li>
-<li><strong>出租车：</strong>出租车按照司机的操控完成真正的行驶，把乘客送到目的地。</li>
-</ul>
-<p><img src="https://gitee.com/isKylin/picbed/raw/master/webAutoTest/image-20200930092023197.png" alt="image-20200930092023197"></p>
-<p>在 WebDriver 中也有类似的三个角色：</p>
-<ul>
-<li><strong>工程师写的自动化测试代码</strong>：自动化测试代码发送请求给浏览器的驱动（比如火狐驱动、谷歌驱动）</li>
-<li><strong>浏览器的驱动</strong>：它来解析这些自动化测试的代码，解析后把它们发送给浏览器</li>
-<li><strong>浏览器</strong>：执行浏览器驱动发来的指令，并最终完成工程师想要的操作。</li>
-</ul>
-<p><img src="https://gitee.com/isKylin/picbed/raw/master/webAutoTest/image-20200930092056580.png" alt="image-20200930092056580"></p>
-<h2 id="二、Selenium-环境搭建"><a href="#二、Selenium-环境搭建" class="headerlink" title="二、Selenium 环境搭建"></a>二、Selenium 环境搭建</h2><h3 id="2-1-Java-环境"><a href="#2-1-Java-环境" class="headerlink" title="2.1 Java 环境"></a>2.1 Java 环境</h3><p>想要通过 java 语言来使用 selenium 框架，前提要完成 jdk 环境的安装。</p>
-<p>详细安装教程见：<a target="_blank" rel="noopener" href="https://blog.csdn.net/shengmer/article/details/78836255">JDK 下载安装教程</a></p>
-<h3 id="2-2-Selenium-环境"><a href="#2-2-Selenium-环境" class="headerlink" title="2.2 Selenium 环境"></a>2.2 Selenium 环境</h3><p>Selenium 在 Java 中的使用主要有两种：</p>
-<p>1）简单 Java 工程</p>
-<p>下载对应的版本 jar 包，然后直接导入 selenium 的 jar 包就可以了。</p>
-<p>jar 包下载地址：<a target="_blank" rel="noopener" href="https://npm.taobao.org/mirrors/selenium">Selenium jar 包下载</a></p>
-<p>2）Maven 工程</p>
-<p>首先创建一个 Maven 工程，然后在 pom.xml 文件中添加 Selenium 依赖即可。</p>
-<p>详细安装教程见：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/xihehua/p/9639045.html">Maven 下载安装教程</a></p>
-<pre class=" language-xml"><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span>
-     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span>org.seleniumhq.selenium<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span>
-     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>selenium-java<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span>
-     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">></span></span>3.4.0<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">></span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span></code></pre>
-<h3 id="2-3-Selenium-驱动包"><a href="#2-3-Selenium-驱动包" class="headerlink" title="2.3 Selenium 驱动包"></a>2.3 Selenium 驱动包</h3><p>当 selenium 升级到3.0之后，对不同的浏览器驱动进行了规范，如果想使用 selenium 驱动不同的浏览器，必须单独下载并设置不同的浏览器驱动。</p>
-<p>各浏览器下载地址：</p>
-<ul>
-<li>Firefox浏览器驱动：<a target="_blank" rel="noopener" href="https://github.com/mozilla/geckodriver/releases">Firefox 驱动下载地址</a></li>
-<li>Chrome浏览器驱动：<a target="_blank" rel="noopener" href="https://sites.google.com/a/chromium.org/chromedriver/home">Chrome 驱动下载地址</a></li>
-<li>Edge浏览器驱动：<a target="_blank" rel="noopener" href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/">Edge 驱动下载地址</a></li>
-</ul>
-<p><strong>设置浏览器驱动</strong></p>
-<p>设置浏览器的地址非常简单，我们可以手动创建一个存放浏览器驱动的目录，如： C:\driver , 将下载的浏览器驱动文件丢到该目录下。</p>
-<p>我的电脑 –&gt; 属性 –&gt; 系统设置 –&gt; 高级 –&gt; 环境变量 –&gt; 系统变量 –&gt; Path，将“C:\driver”目录添加到 Path 的值中。</p>
-<h2 id="三、Selenium-简单例子"><a href="#三、Selenium-简单例子" class="headerlink" title="三、Selenium 简单例子"></a>三、Selenium 简单例子</h2><p>首先，先写一个简单的例子来验证一下环境是否配置成功（这里使用 Maven 工程进行操作）</p>
-<pre class=" language-java"><code class="language-java"><span class="token keyword">import</span> org<span class="token punctuation">.</span>openqa<span class="token punctuation">.</span>selenium<span class="token punctuation">.</span>By<span class="token punctuation">;</span>
-<span class="token keyword">import</span> org<span class="token punctuation">.</span>openqa<span class="token punctuation">.</span>selenium<span class="token punctuation">.</span>WebDriver<span class="token punctuation">;</span>
-<span class="token keyword">import</span> org<span class="token punctuation">.</span>openqa<span class="token punctuation">.</span>selenium<span class="token punctuation">.</span>edge<span class="token punctuation">.</span>EdgeDriver<span class="token punctuation">;</span>
+                <h2 id="一、selenium-概述"><a href="#一、selenium-概述" class="headerlink" title="一、selenium 概述"></a>一、selenium 概述</h2><h3 id="1-1-selenium-简介"><a href="#1-1-selenium-简介" class="headerlink" title="1.1 selenium 简介"></a>1.1 selenium 简介</h3><p>selenium 是一个基于 web 应用的自动化框架，selenium 提供的 api，能够帮助我们完成页面元素定位、页面元素的操作，selenium 具有如下特点：</p>
+<pre><code>1）多浏览器支持：如 chrome、firefox、edge、ie 等；
 
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">SeleniumDemo01</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-        <span class="token comment" spellcheck="true">// 1. 引入本地浏览器驱动</span>
-        System<span class="token punctuation">.</span><span class="token function">setProperty</span><span class="token punctuation">(</span><span class="token string">"webdriver.edge.driver"</span><span class="token punctuation">,</span><span class="token string">"E:\\driver\\MicrosoftWebDriver.exe"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token comment" spellcheck="true">// 2. 创建 webDriver 驱动</span>
-        WebDriver webDriver <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">EdgeDriver</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token comment" spellcheck="true">// 3. 打开百度首页</span>
-        webDriver<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">"https://www.baidu.com"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token comment" spellcheck="true">// 4. 获取输入框，输入 selenium</span>
-        webDriver<span class="token punctuation">.</span><span class="token function">findElement</span><span class="token punctuation">(</span>By<span class="token punctuation">.</span><span class="token function">id</span><span class="token punctuation">(</span><span class="token string">"kw"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">sendKeys</span><span class="token punctuation">(</span><span class="token string">"selenium"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token comment" spellcheck="true">// 5. 获取“百度一下”按钮，点击搜索</span>
-        webDriver<span class="token punctuation">.</span><span class="token function">findElement</span><span class="token punctuation">(</span>By<span class="token punctuation">.</span><span class="token function">id</span><span class="token punctuation">(</span><span class="token string">"su"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token comment" spellcheck="true">// 6. 退出浏览器</span>
-        webDriver<span class="token punctuation">.</span><span class="token function">quit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
-<p>运行代码，若能成功打开浏览器，并执行相应的操作，则证明环境已经配置完成，另外，解释一下以上代码，首先，需要将本地的浏览器驱动.exe 文件引用进来，之后创建一个 webDriver 驱动，调用 webdriver 封装好的方法去获取需要打开的页面，以及相应的执行操作。</p>
+2）多语言支持：如 java、python、php、c# 等；
+
+3）多操作系统支持：如 windows、linux、macos 等；
+
+4）开源免费。</code></pre>
+<blockquote>
+<p>selenium 官网：<a target="_blank" rel="noopener" href="http://www.seleniumhg.org/">http://www.seleniumhg.org/</a></p>
+</blockquote>
+<h3 id="1-2-selenium-组成"><a href="#1-2-selenium-组成" class="headerlink" title="1.2 selenium 组成"></a>1.2 selenium 组成</h3><p>selenium 由四个主要组成部分组成，包括：Selenium IDE，Selenium RC，Selenium WebDriver 和 Selenium Grid。</p>
+<pre><code>1）Selenium IDE：Selenium IDE 即 selenium 集成开发环境，它可以从 chrome、firefox 商店中安装，它可以在测试脚本上提供记录和回放功能，可以以多种语言（java、python、c#）形式导出脚本，可在 Selenium RC 或 Selenium WebDriver 中使用。
+
+2）Selenium RC：Selenium RC 即 selenium 远程控制器，现已去掉，可以通过它来使用所有它支持的编程语言来实现 web 自动化，另外，它还涉及一个 HTTP 代理服务器，它使浏览器能够相信正在测试的 Web 应用程序来自代理服务器提供的域。
+- Selenium RC Server：充当 Web 请求的 HTTP 代理。
+- Selenium RC Client：包含编程语言代码的库。
+
+3）Selenium WebDriver：
+
+4）Selenium Grid：</code></pre>
+<h3 id="1-3-selenium-原理"><a href="#1-3-selenium-原理" class="headerlink" title="1.3 selenium 原理"></a>1.3 selenium 原理</h3><p>1）运行自动化脚本，首先，会打开指定的浏览器，webdriver 将目标浏览器绑定到特定端口，启动后的浏览器即 webdriver 的 remote server，用来执行脚本命令。</p>
+<p>2）浏览器启动后，selenium 相关操作会通过 RemoteConnection 链接 remote server，然后使用 execute 方法调用 _request() 方法通过 urlib3 向 remote server 发送请求。</p>
+<p>3）浏览器通过请求内容执行相应操作。</p>
+<p>4）浏览器把执行动作结果通过浏览器驱动程序返回给自动化脚本。</p>
+<h2 id="二、selenium-环境搭建"><a href="#二、selenium-环境搭建" class="headerlink" title="二、selenium 环境搭建"></a>二、selenium 环境搭建</h2><h3 id="2-1-python-环境搭建"><a href="#2-1-python-环境搭建" class="headerlink" title="2.1 python 环境搭建"></a>2.1 python 环境搭建</h3><p>1）下载 python</p>
+<p>python 官网：<a target="_blank" rel="noopener" href="https://www.python.org/">https://www.python.org/</a></p>
+<p>选择 download，windows（这里演示的操作系统是 win10），之后下载即可。</p>
+<p><img src="https://gitee.com/isKylin/picbed/raw/master/webAutoTest/image-20201103094957273.png" alt="image-20201103094957273"></p>
+<p>2）安装、配置 python</p>
+<p>直接安装，next 到底即可，这里注意安装过程中，需要选择 “Add Python 3.x to PATH” ，安装完成后，在命令行中输入 python -version，若输出 python 版本号，则证明安装成功，由此，完成了 python 环境的搭建工作。</p>
+<p><img src="https://gitee.com/isKylin/picbed/raw/master/webAutoTest/image-20201103095449676.png" alt="image-20201103095449676"></p>
+<h3 id="2-2-selenium-环境搭建"><a href="#2-2-selenium-环境搭建" class="headerlink" title="2.2 selenium 环境搭建"></a>2.2 selenium 环境搭建</h3><p>在命令行输入 pip install selenium 即可自动安装 selenium，安装完成后，输入 pip show selenium 可查看当前的 selenium 版本。</p>
+<p><img src="https://gitee.com/isKylin/picbed/raw/master/webAutoTest/image-20201103095916263.png" alt="image-20201103095916263"></p>
+<h3 id="2-3-selenium-浏览器驱动"><a href="#2-3-selenium-浏览器驱动" class="headerlink" title="2.3 selenium 浏览器驱动"></a>2.3 selenium 浏览器驱动</h3><p>chromedriver：<a target="_blank" rel="noopener" href="http://npm.taobao.org/mirrors/chromedriver/">http://npm.taobao.org/mirrors/chromedriver/</a></p>
+<p>geckodriver：<a target="_blank" rel="noopener" href="https://github.com/mozilla/geckodriver/releases/">https://github.com/mozilla/geckodriver/releases/</a></p>
+<p>iedriver：<a target="_blank" rel="noopener" href="http://selenium-release.storage.googleapis.com/index.html">http://selenium-release.storage.googleapis.com/index.html</a>?</p>
+<p>注意：driver 版本与浏览器版本应对应，避免出现闪退或版本冲突问题。</p>
+<p>下载解压后，将浏览器驱动复制到 python 的安装目录，例如 E:\python， 然后将 python 的安装目录添加到系统环境变量的 path ，验证是否安装成功，（以 chromedriver 为例）可在命令输入 chromedriver，可查看 chromedriver 的版本即表明安装成功。</p>
+<p><img src="https://gitee.com/isKylin/picbed/raw/master/webAutoTest/image-20201103100356197.png" alt="image-20201103100356197"></p>
+<h2 id="三、selenium-简单例子"><a href="#三、selenium-简单例子" class="headerlink" title="三、selenium 简单例子"></a>三、selenium 简单例子</h2><p>简单写一个例子来验证 selenium 的环境是否搭建成功：</p>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> selenium <span class="token keyword">import</span> webdriver
+<span class="token keyword">from</span> time <span class="token keyword">import</span> sleep
+
+<span class="token comment" spellcheck="true"># 创建 driver 驱动</span>
+driver <span class="token operator">=</span> webdriver<span class="token punctuation">.</span>Chrome<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 打开百度搜索页面</span>
+driver<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'https://www.baidu.com/'</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 获取文本框，输入 selenium</span>
+driver<span class="token punctuation">.</span>find_element_by_id<span class="token punctuation">(</span><span class="token string">"kw"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>send_keys<span class="token punctuation">(</span><span class="token string">"selenium"</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 获取百度一下按钮，点击搜索</span>
+driver<span class="token punctuation">.</span>find_element_by_id<span class="token punctuation">(</span><span class="token string">"su"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>click<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 等待 2 秒</span>
+sleep<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 退出浏览器</span>
+driver<span class="token punctuation">.</span>quit<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+<p>运行代码，若能成功打开浏览器，并执行相应的操作，则证明环境已经配置完成，另外，解释一下以上代码，首先，需要将本地的浏览器驱动 .exe 文件引用进来，之后创建一个 driver 驱动，调用 webdriver 封装好的方法去获取需要打开的页面，以及相应的执行操作。</p>
+<p>自此，selenium 如何去搭建就已经全部讲完，从下一篇系列文章开始，将主要来讲一讲 selenium 的相关操作。</p>
 
             </div>
             <hr/>
@@ -609,7 +578,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a target="_blank" rel="noopener" href="http://yoursite.com./2020/10/20/selenium-for-java-yi/">http://yoursite.com./2020/10/20/selenium-for-java-yi/</a>
+                    <a target="_blank" rel="noopener" href="http://yoursite.com./2020/10/22/selenium-for-python-yi/">http://yoursite.com./2020/10/22/selenium-for-python-yi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -647,12 +616,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="./tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">
-                                    <span class="chip bg-color">软件测试</span>
+                                <a href="./tags/webui-%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/">
+                                    <span class="chip bg-color">webui 自动化测试</span>
                                 </a>
                             
-                                <a href="./tags/Web-%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/">
-                                    <span class="chip bg-color">Web 自动化测试</span>
+                                <a href="./tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">
+                                    <span class="chip bg-color">软件测试</span>
                                 </a>
                             
                         </div>
@@ -824,18 +793,18 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="./2020/10/22/yi-dong-duan-ce-shi-xue-xi-er/">
+                <a href="./2020/10/22/yi-dong-duan-ce-shi-xue-xi-san/">
                     <div class="card-image">
                         
-                        <img src="https://gitee.com/isKylin/picbed/raw/master/webAutoTest/timg.jpg" class="responsive-img" alt="移动端测试学习（二）">
+                        <img src="https://gitee.com/isKylin/picbed/raw/master/webAutoTest/timg.jpg" class="responsive-img" alt="移动端测试学习（三）">
                         
-                        <span class="card-title">移动端测试学习（二）</span>
+                        <span class="card-title">移动端测试学习（三）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            了解了移动端测试都有哪些测试点之后，首先来学习移动端测试环境的搭建，为后面移动端自动化测试做准备。
+                            针对移动端 Android 的测试， adb 命令是很重要的一个点，了解常用的 adb 命令， 将会为 Android 测试带来很大的方便，其中很多命令将会用于自动化测试的脚本当中。
                         
                     </div>
                     <div class="publish-info">
@@ -857,12 +826,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="./tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%B5%8B%E8%AF%95/">
-                        <span class="chip bg-color">移动端测试</span>
-                    </a>
-                    
                     <a href="./tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">
                         <span class="chip bg-color">软件测试</span>
+                    </a>
+                    
+                    <a href="./tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%B5%8B%E8%AF%95/">
+                        <span class="chip bg-color">移动端测试</span>
                     </a>
                     
                 </div>
@@ -876,30 +845,30 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="./2020/10/20/selenium-for-java-er/">
+                <a href="./2020/10/22/yi-dong-duan-ce-shi-xue-xi-yi/">
                     <div class="card-image">
                         
-                        <img src="https://gitee.com/isKylin/picbed/raw/master/webAutoTest/15687260-f31e32e579aae862.jpg" class="responsive-img" alt="Selenium for Java（二）">
+                        <img src="https://gitee.com/isKylin/picbed/raw/master/webAutoTest/timg.jpg" class="responsive-img" alt="移动端测试学习（一）">
                         
-                        <span class="card-title">Selenium for Java（二）</span>
+                        <span class="card-title">移动端测试学习（一）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            若要使用 Selenium 做自动化测试，首先需要知道 Selenium 都给我们提供了哪些元素定位、元素操作方法。
+                            移动端测试，即在移动设备进行项目的测试工作，目前移动端的两大主流系统分别为 android、ios，对于移动端的测试，主要有下。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-20
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-22
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="./categories/Selenium-for-Java/" class="post-category">
-                                    Selenium for Java
+                            <a href="./categories/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                    移动端测试学习
                                 </a>
                             
                             
@@ -913,8 +882,8 @@
                         <span class="chip bg-color">软件测试</span>
                     </a>
                     
-                    <a href="./tags/Web-%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/">
-                        <span class="chip bg-color">Web 自动化测试</span>
+                    <a href="./tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%B5%8B%E8%AF%95/">
+                        <span class="chip bg-color">移动端测试</span>
                     </a>
                     
                 </div>
@@ -1158,7 +1127,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">10.3k</span>&nbsp;字
+                class="white-color">3.3k</span>&nbsp;字
             
             
             
